@@ -1,0 +1,33 @@
+/* Portfolio Section */
+#portfolio {
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    width: calc(33.333% - 20px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-item {
+        width: 100%;
+    }
+}
